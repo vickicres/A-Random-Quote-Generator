@@ -83,11 +83,7 @@ var message = '';
 
  function getRandomQuote() {
     var randomQuote = Math.floor(Math.random()* quotes.length); // generator a random number 
-    
-     // creates a loop that runs as many times as there are items in the array
-   /*  for ( var i = 0; i < quotes.length; i += 1) {
-         quote = quotes[i];
-     } */
+     
     return quotes[randomQuote];  // returns to random quote object
   }
 
@@ -130,7 +126,7 @@ var message = '';
 function getRandomColor() {
     var getColor = getRandomQuote(); // assign a new variable equal to get quote
     
-    // basic random color generator, source from W3 school.
+    // basic random color generator, source come from W3 school.
     var x = Math.floor(Math.random() * 256);
     var y = Math.floor(Math.random() * 256);
     var z = Math.floor(Math.random() * 256);
@@ -148,7 +144,7 @@ printQuote();
 /* Extra credit-3 */
 /*** Auto-refreshed quotes ****/
 function timing () {
-    timing = setInterval("location.reload(true);", 10000);  // "location.reload()" source came from stackOverflow // will refresh the page every 10s
+    timing = setInterval("location.reload(true);", 10000);  // "location.reload()" source come from stackOverflow // will refresh the page every 10s
 }
 timing();
 
